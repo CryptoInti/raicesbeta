@@ -1,12 +1,19 @@
 extends layout
 
 block content
+  a(href="/") Raices del Ñuble
+
   h1= title
+
+  ul#menu
+    li: a(href="/list-services") Lista de Servicios
+    li: a(href="/us") Nosotros
+
   .container
     input#bar.foo1.foo2
-    h2= title
-  p Welcome to LOLOLALALA  #{title}
-  p Wenaaazo 
+    h3= description
+  p Bienvenido a #{title}
+  p Acá podras encontrar un listado de todos los serivicios turisticos y crear paquetes turísticos a medida
   input#bar
   input(type="text", placeholder="your name")
   input(
