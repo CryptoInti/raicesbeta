@@ -1,72 +1,29 @@
 extends layout
 
+include _includes/sharedHTMLfunctions	
+
 block content
 	#banner.page-header
 		.row
 			.col-lg-6
-				h1= title
-					small &nbsp;Encuentra los mejores atractivos turísticos en la zona!
+				h1!= pageHeader.title
+					small &nbsp;!{pageHeader.description}
 	.row
 		.col-xs-12.col-sm-8
 			.row.list-group
-				.col-xs-12.list-group-item
-					h4
-						a(href="/info-service") Cabañas Ayelemu
-						small &nbsp;
-							span.glyphicon.glyphicon-star
-							span.glyphicon.glyphicon-star
-							span.glyphicon.glyphicon-star
-							span.glyphicon.glyphicon-star
-							span.glyphicon.glyphicon-star-empty
-						span.badge.pull-right.badge-default 3,5km
-					p Km. 68,5 Valle Las Trancas, Provincia de Ñuble, Región del Bio bio, Chile
-					p
-						span.label.label-success Wifi
-							&nbsp;
-						span.label.label-warning Cabañas de 1-2;2-4;6+ Personas
-							&nbsp;
-						span.label.label-success Reservas Disponibles
-							&nbsp;
-		.col-xs-12.col-sm-8
-			.row.list-group
-				.col-xs-12.list-group-item
-					h4
-						a(href="/info-service") Cabañas Vista Hermosa
-						small &nbsp;
-							span.glyphicon.glyphicon-star
-							span.glyphicon.glyphicon-star
-							span.glyphicon.glyphicon-star
-							span.glyphicon.glyphicon-star-empty
-							span.glyphicon.glyphicon-star-empty
-						span.badge.pull-right.badge-default 1,5km
-					p Km. 38,5 Camino los Pellines, Provincia de Ñuble, Región del Bio bio, Chile
-					p
-						span.label.label-success Wifi
-							&nbsp;
-						span.label.label-warning Cabañas de 1-2;2-4;6+ Personas
-							&nbsp;
-						span.label.label-danger Reservas Agotadas
-							&nbsp;
-		.col-xs-12.col-sm-8
-			.row.list-group
-				.col-xs-12.list-group-item
-					h4
-						a(href="/info-service") Hotel Antu 
-						small &nbsp;
-							span.glyphicon.glyphicon-star
-							span.glyphicon.glyphicon-star
-							span.glyphicon.glyphicon-star
-							span.glyphicon.glyphicon-star
-							span.glyphicon.glyphicon-star
-						span.badge.pull-right.badge-default 5,5km
-					p Km. 75,5 Valle Las Trancas, Provincia de Ñuble, Región del Bio bio, Chile
-					p
-						span.label.label-success Wifi, Alimentación
-							&nbsp;
-						span.label.label-warning Habitaciones de 1-2;3-4;6+ Personas
-							&nbsp;
-						span.label.label-success Reservas Disponibles
-							&nbsp;														
+				each service in services
+					.col-xs-12.list-group-item
+						h4
+							a(href="/info-service")= service.name 
+							small &nbsp;
+								+outputRating(service.rating)
+							span.badge.pull-right.badge-default= service.distance
+						p.address= service.address
+						p
+							each servicio in service.services
+								span.label.label-success= servicio
+								&nbsp;
+												
 		.col-xs-12.col-sm-4
 			p.Buscas donde hospedar? en Raices del Ñuble tenemos todo para tu experiencia turística. Quizás buscas lugares unicos, deporte aventura o tours? Deja que nosotros te ayudemos, Raices del Ñuble tiene todo lo que buscas.
   

@@ -9,7 +9,7 @@ var ctrlHola = require('../controllers/hola');
 
 console.log("entro a routes/index.js");
 /* GET home page. */
-router.get('/', ctrlMain.index);
+router.get('/', ctrlServices.listServices/*ctrlMain.index*/);
 /* test de hola */
 router.get('/hola', ctrlHola.hola);
 

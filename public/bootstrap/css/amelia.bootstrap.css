@@ -306,7 +306,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #ffffff;
-  background-color: #108a93;
+  background-color: #9ba874; /*#108a93;*/
 }
 
 input,
@@ -4699,7 +4699,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-default {
-  background-color: #ad1d28;
+  background-color: #6a604e; /*#ad1d28;*/
   border-color: #911821;
 }
 
@@ -5672,7 +5672,7 @@ a.list-group-item:focus {
 
 .panel {
   margin-bottom: 20px;
-  background-color: #13a0aa;
+  background-color: #647c8d; /*#13a0aa;*/
   border: 1px solid transparent;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
@@ -5837,7 +5837,7 @@ a.list-group-item:focus {
 
 .panel-primary > .panel-heading {
   color: #ffffff;
-  background-color: #ad1d28;
+  background-color: #6a604e; /*#ad1d28;*/
   border-color: #ad1d28;
 }
 
@@ -5909,7 +5909,7 @@ a.list-group-item:focus {
 
 .panel-info > .panel-heading {
   color: #ffffff;
-  background-color: #4d3a7d;
+  background-color: #6a604e; /*#4d3a7d;*/
   border-color: #352f65;
 }
 
@@ -7252,7 +7252,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lobster', cursive;
+  //font-family: 'Lobster', cursive;
 }
 
 .text-primary {
@@ -7323,7 +7323,7 @@ legend {
 }
 
 .list-group-item {
-  background-color: #13a0aa;
+  background-color: #647c8d; /*#13a0aa;*/
 }
 
 .popover {
