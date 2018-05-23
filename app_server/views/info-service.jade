@@ -1,0 +1,84 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1 Cabañas Ayelemu
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          p.rating
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star-empty
+            span.glyphicon.glyphicon-star-empty
+          p Km. 68,5 Valle Las Trancas, Provincia de Ñuble, Región del Bio bio, Chile
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Opening hours
+            .panel-body
+              p Lunes - Viernes : 7:00am - 7:00pm
+              p Sabado : 8:00am - 5:00pm
+              p Domingo : cerrado
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Instalaciones
+            .panel-body
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Wifi
+              | &nbsp;
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Comida
+              | &nbsp;
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Areas recreacionales
+              | &nbsp;
+        .col-xs-12.col-sm-6.location-map
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Localización
+            .panel-body
+              img.img-responsive.img-rounded(src='https://maps.googleapis.com/maps/api/staticmap?center=Las+Trancas,+Chile&zoom=11&scale=false&size=400x350&maptype=hybrid&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7CLas+Trancas,+Chile')
+      .row
+        .col-xs-12
+          .panel.panel-primary.review-panel
+            .panel-heading
+              a.btn.btn-default.pull-right(href='/location/review/new') Add review
+              h2.panel-title Evaluación de Visitantes
+            .panel-body.review-container
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star-empty
+                    span.reviewAuthor Cliente Turista
+                    small.reviewTimestamp 16 Abril 2018
+                  .col-xs-12
+                    p Todo bonito! :D
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                    span.reviewAuthor Charlie Chaplin
+                    small.reviewTimestamp 16 Marzo 2018
+                  .col-xs-12
+                    p Extraordinaario
+    .col-xs-12.col-md-3
+      p.lead
+        | CABAÑAS AYELEMU, Tomarse un descanso, respirar aire fresco y caminar por la montaña son algunas de las actividades que podrás realizar en este lugar, ideal para disfrutar de la tranquilidad de la naturaleza con la familia o los amigos. 
+      p
+        | Haz hospedado en Cabañas Ayelemu? Dejasnos tus comentarios para que más personas como tu sepan de sus servicios.

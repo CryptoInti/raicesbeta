@@ -1,11 +1,11 @@
 /* GET Services (Servicios) page */
 var listServices = function(req, res){
-  res.render('index', { title: 'Lista de Servicios', description: 'Esta es la lsita de servicios turisticos en la zona' });
+  res.render('list-services', { title: 'Lista de Servicios', description: 'Esta es la lsita de servicios turisticos en la zona' });
   console.log("entro al controller \'list\' de services.js");
 };
 
 var info = function(req, res){
-  res.render('index', { title: 'Servicio X', description: 'Información del Servicio X' });
+  res.render('info-service', { title: 'Servicio X', description: 'Información del Servicio X' });
   console.log("entro al controller \'info\' de services.js");
 };
 
