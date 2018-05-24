@@ -1,0 +1,13 @@
+db.services.save({
+	name: 'Hotel Antu',
+	address: 'Km. 78,5 Las Trancas, Provincia de Ñuble, Región del Bio bio, Chile',
+	rating: 4,
+	services: ['Wifi','Tours','Restaurant','Deportes'],
+	coords: [-72.0818840,-36.6188240],
+	openingTimes: [{
+		days: 'Todos los días',
+		opening: '06:00 hrs',
+		closing: '06:00 hrs',
+		closed: false
+	}]
+})

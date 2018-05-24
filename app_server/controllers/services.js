@@ -12,7 +12,7 @@ var listServices = function(req, res){
 									services: ['Wifi','Cabañas de 1-2;2-4;6+ Personas','Reservas Disponibles'],
 									distance: '3,5km'
 								},{
-									name: 'Cabañas Vista Hermosa',
+									name: 'Cafe Vista Hermosa',
 									address: 'Km. 38,5 Camino los Pellines, Provincia de Ñuble, Región del Bio bio, Chile',
 									rating: 3,
 									services: ['Wifi','Cabañas de 1-2;2-4;6+ Personas','Reservas Agotadas'],
