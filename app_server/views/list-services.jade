@@ -5,9 +5,12 @@ include _includes/sharedHTMLfunctions
 block content
 	#banner.page-header
 		.row
-			.col-lg-6
-				h1!= pageHeader.title
-					small &nbsp;!{pageHeader.description}
+			.col-lg-12.bkimg			
+				.nombre-servicio.col-lg-12
+					h1!= pageHeader.title
+				.info-foto.col-lg-12
+					p &nbsp;!{pageHeader.description}					
+				.elementor-background-overlay.col-lg-12
 	.row
 		.col-xs-12.col-sm-8
 			.row.list-group
@@ -26,4 +29,7 @@ block content
 												
 		.col-xs-12.col-sm-4
 			p.Buscas donde hospedar? en Raices del Ñuble tenemos todo para tu experiencia turística. Quizás buscas lugares unicos, deporte aventura o tours? Deja que nosotros te ayudemos, Raices del Ñuble tiene todo lo que buscas.
+			p Patrocina.
+			img(src="./images/logo-munipinto.png" alt="Municipalidad de Pinto")(style="max-width:100%;")
+				
   

@@ -2,8 +2,10 @@ extends layout
 
 block content
   .row.page-header
-    .col-lg-12
-      h1 Cabañas Ayelemu
+    .col-lg-12.ayelemu
+      .nombre-servicio
+        h1 Cabañas Ayelemu
+      .elementor-background-overlay.col-lg-12
   .row
     .col-xs-12.col-md-9
       .row
@@ -43,7 +45,7 @@ block content
             .panel-heading
               h2.panel-title Localización
             .panel-body
-              img.img-responsive.img-rounded(src='https://maps.googleapis.com/maps/api/staticmap?center=Las+Trancas,+Chile&zoom=11&scale=false&size=400x350&maptype=hybrid&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7CLas+Trancas,+Chile')
+              img.img-responsive.img-rounded(src='/images/ayelemu-map.png')
       .row
         .col-xs-12
           .panel.panel-primary.review-panel

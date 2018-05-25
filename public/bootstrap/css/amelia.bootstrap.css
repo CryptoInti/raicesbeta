@@ -306,7 +306,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #ffffff;
-  background-color: #9ba874; /*#108a93;*/
+  background-color: #ffc300; /*#ff5733;*/
 }
 
 input,
@@ -4699,7 +4699,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-default {
-  background-color: #6a604e; /*#ad1d28;*/
+  background-color: #900c3f; /*#c70039;*/
   border-color: #911821;
 }
 
@@ -5672,7 +5672,7 @@ a.list-group-item:focus {
 
 .panel {
   margin-bottom: 20px;
-  background-color: #647c8d; /*#13a0aa;*/
+  background-color: #2a363b; /*#13a0aa;*/
   border: 1px solid transparent;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
@@ -7323,7 +7323,7 @@ legend {
 }
 
 .list-group-item {
-  background-color: #647c8d; /*#13a0aa;*/
+  background-color: #2a363b; /*#13a0aa;*/
 }
 
 .popover {

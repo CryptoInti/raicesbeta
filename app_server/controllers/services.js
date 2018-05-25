@@ -2,8 +2,8 @@
 var listServices = function(req, res){
   res.render('list-services', { title: 'Lista de Servicios', description: 'Esta es la lista de servicios turisticos en la zona',
   								pageHeader:{
-  									title: 'Listado <br> de Servicios',
-  									description: '<br> blablabla <br> blablabla <br> blablabla'
+  									title: 'Listado de Servicios',
+  									description: '<br> <br> <br>Salto las Turbinas, Pinto, Chillan, Chile.'
 								},
 								services: [{
 									name: 'Cabañas Ayelemu',
